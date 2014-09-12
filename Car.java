@@ -7,7 +7,15 @@ public class Car{
 
 	public Car(String manufacturer)
 	{
+		this(manufacturer, null, null, null);
+	}
+
+	public Car(String manufacturer, String color, String type, int engineSize)
+	{
 		this.manufacturer = manufacturer;
+		this.color = color;
+		this.type = type;
+		this.engineSize = engineSize;
 	}
 
 	public void setManufacturer(String manufacturer)

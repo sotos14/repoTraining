@@ -3,10 +3,12 @@ public class Driver{
 	private String driverName;
 	private String licenceType
 	private int age;
+	private ArrayList<Car> ownedCars;
 	
 	public Driver(String driverName)
 	{
 		this.driverName = driverName;
+		ownedCars = new ArrayList<Car>();
 	}
 
 	public String getName()
@@ -27,5 +29,15 @@ public class Driver{
 	public void setLicenceType(String licenceType)
 	{
 		this.licenceType = licenceType;
+	}
+
+	public void addCar(Car car)
+	{
+		ownedCars.add(car);
+	}
+
+	public ArrayList<Car> getCars()
+	{
+		return ownedCars;
 	}
 }
