@@ -57,4 +57,10 @@ public class Car{
 	{
 		return engineSize;
 	}
+
+	public String getInfo()
+	{
+		String carInfo = manufacturer+"\n"+"  Type: "+type+"\n"+"  "+engineSize+" litre"+"\n"+"  Color: "+color;
+		return carInfo;
+	}
 }

@@ -40,4 +40,24 @@ public class Driver{
 	{
 		return ownedCars;
 	}
+
+	public String getInfo()
+	{
+		String carinfo = "";
+
+		for(Car car : ownedCars)
+		{
+			carinfo += "* "+car.getInfo();
+		}
+
+		String bar1 = "\n=======================\n";
+		String bar2 = "=======================\n";
+
+		String driverInfo = "Name: "+driverName+"\n" +
+							"Age: "+age+
+							"Licence: "+licenceType+
+							"Car(s): "+car.getInfo();
+
+		return driverInfo;
+	}
 }
